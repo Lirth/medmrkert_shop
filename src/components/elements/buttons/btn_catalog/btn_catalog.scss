@@ -1,0 +1,41 @@
+.btn_catalog_wrapper {
+  .btn_catalog {
+    display: flex;
+    border: 0;
+    background: #42B1A8;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    padding: 19px 22px;
+    color: #FFFFFF;
+    height: 48px;
+
+    .catalog_icon {
+      display: flex;
+      flex-direction: column;
+      margin-right: 8px;
+
+      svg:nth-child(2) {
+        margin: 3.81px 0;
+      }
+    }
+  }
+
+  .btn_catalog_dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    border: 1px solid #EDEDED;
+    border-left: 0;
+    border-right: 0;
+    height: 500px;
+  }
+}
+

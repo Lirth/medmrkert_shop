@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.slide-fade-enter-active {
+  transition: all .2s ease;
+}
+.slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active до версии 2.1.8 */ {
+  transform: translateY(200%) scale(1) rotateY(90deg)!important;
+  opacity: 0;
+}
+
+.slide-fade2-enter-active {
+  transition: all .2s ease;
+}
+.slide-fade2-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade2-enter, .slide-fade2-leave-to
+  /* .slide-fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+.modal-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
