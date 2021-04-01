@@ -17,7 +17,6 @@ section, header, footer {
 
   .wrapper {
     width: 100%;
-    margin-bottom: 30px;
     border-bottom: 1px solid #EDEDED;
     @media  (max-width: 768px) {
       display: none;
@@ -41,6 +40,20 @@ section {
   }
 }
 
+section:first-of-type {
+  margin-top: 30px;
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+
+section:last-of-type {
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+
 .slider_wrapper {
   @media (max-width: 768px) {
     padding: 0 !important;
@@ -52,4 +65,10 @@ section {
 .carousel_wrapper {
   margin: 0 !important;
   padding: 0 !important;
+}
+.breadcrumbs_margins {
+  margin-bottom: 40px;
+  @media (max-width: 768px) {
+
+  }
 }

@@ -1,0 +1,85 @@
+.footer_1 {
+  border-top: 1px solid #F6F6F6;
+  padding: 40px 0;
+
+  .column_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    width: 100%;
+
+    label {
+      margin-bottom: 25px;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 155%;
+      color: #181818;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        list-style: none;
+        margin-bottom: 12px;
+
+        a {
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 155%;
+          color: #181818;
+        }
+      }
+
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.footer_2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 155%;
+    color: #181818;
+  }
+
+  a {
+    color: #181818 !important;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer_3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 155%;
+    color: #A8A8A8;
+  }
+}

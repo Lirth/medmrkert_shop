@@ -1,12 +1,14 @@
 <template>
     <div>
-        <section>
-            <div class="container title_row">
-                <title_page>Шовный материал</title_page>
-                <p>19 товаров</p>
+        <section class="breadcrumbs_margins">
+            <div class="container">
+                <breadcrumbs>Каталог</breadcrumbs>
             </div>
-            <div class="container catalog_box">
-                <div class="sidebar_wrapper">
+        </section>
+        <section>
+            <button @click="showFilterMobile" class="filtBtnMobile">Фильтры</button>
+            <div class="container catalog_box" >
+                <div class="sidebar_wrapper" style="overflow: auto" :class="{ 'active' : isActive2 }">
                     <div class="sidebar_title">
                         <h6>Фильтр</h6>
                         <button>
@@ -18,7 +20,7 @@
                             Очистить фильтр
                         </button>
                     </div>
-                    <div class="sidebar_item" :class="{ 'active' : isActive }">
+                    <div class="sidebar_item" v-for="item in 5" :class="{ 'active' : isActive }">
                         <div class="sidebar_item_showsettings"  @click="showFilter">
                             <h6>Категория товара</h6>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,12 +42,44 @@
                         <btn_large class="btn_apply">Применить</btn_large>
                     </div>
                 </div>
-                <div class="catalog_container">
-                    <div class="carousel_container" v-for="item in 10">
-                        <div class="carousel_wrapper" ref="carousel">
-                            <div ref="carousel_item" class="carousel_item">
-                                <product_item></product_item>
+                <div style="">
+                    <div class="container title_row">
+                        <title_page class="title_page_this">Шовный материал</title_page>
+                        <p>19 товаров</p>
+                    </div>
+                    <div class="catalog_container">
+                        <div class="carousel_container" v-for="item in 10">
+                            <div class="carousel_wrapper" ref="carousel">
+                                <div ref="carousel_item" class="carousel_item">
+                                    <product_item></product_item>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pagination_container">
+                            <button class="prev-page">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.76087" y="0.76087" width="34.4783" height="34.4783" rx="3.80435" stroke-width="1.52174"/>
+                                    <path d="M20.3995 9.146L11.8223 17.9999L20.3995 26.8538L21.8299 25.3783L14.681 17.9999L21.8299 10.6215L20.3995 9.146Z"/>
+                                </svg>
+                            </button>
+                            <div style="display:flex; grid-gap: 6px; align-items: flex-end">
+                                <button class="page-count" v-for="(item, index) in 2">{{index + 1}}</button>
+                                <button class="page-count page-count-mobile" v-for="(item, index) in 4">{{index + 4}}</button>
+                                <svg style="margin: 0 11px;" width="17" height="3" viewBox="0 0 17 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.375" cy="1.375" r="1.375" fill="#181818" fill-opacity="0.55"/>
+                                    <circle cx="8.125" cy="1.375" r="1.375" fill="#181818" fill-opacity="0.55"/>
+                                    <circle cx="14.875" cy="1.375" r="1.375" fill="#181818" fill-opacity="0.55"/>
+                                </svg>
+                                <button class="page-count active">284</button>
+                            </div>
+                            <button class="next-page" disabled>
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.76087" y="0.76087" width="34.4783" height="34.4783" rx="3.80435" stroke-width="1.52174"/>
+                                    <path d="M20.3995 9.146L11.8223 17.9999L20.3995 26.8538L21.8299 25.3783L14.681 17.9999L21.8299 10.6215L20.3995 9.146Z"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>

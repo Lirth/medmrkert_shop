@@ -14,13 +14,6 @@
             </span>
             <slot></slot>
         </button>
-        <transition name="slide-fade">
-            <div class="btn_catalog_dropdown" v-if="DROPDOWN_STATE">
-                <div class="container">
-                    <div>catalog_1</div>
-                </div>
-            </div>
-        </transition>
     </div>
 </template>
 

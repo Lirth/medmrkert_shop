@@ -1,0 +1,221 @@
+p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #181818;
+}
+
+.contact_wrapper {
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 494px;
+  width: 754px;
+  padding: 60px;
+
+  .adr-wrapper {
+    margin-bottom: 31px;
+  }
+
+  .notmain {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #181818;
+  }
+
+  h6 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #181818;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  .main {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #181818;
+    @media (max-width: 768px) {
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #181818;
+    }
+  }
+}
+
+.map_section {
+  position: absolute;
+  z-index: 1;
+  @media (max-width: 1599px) {
+    position: relative;
+    .contact_wrapper {
+      background: #FFFFFF;
+      border: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+.locate {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.locate:before {
+  content: url("../../../public/svg/contacts/home_alt_outline.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.phone:before {
+  content: url("../../../public/svg/contacts/phone.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.mail:before {
+  content: url("../../../public/svg/contacts/mail.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.whatsapp:before {
+  content: url("../../../public/svg/contacts/whatsapp.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+  transform: translateY(-2px);
+}
+
+.telegram {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.telegram:before {
+  content: url("../../../public/svg/contacts/telegram.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.instagram:before {
+  content: url("../../../public/svg/contacts/instagram.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.vk {
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+}
+
+.vk:before {
+  content: url("../../../public/svg/contacts/vk.svg");
+  margin-right: 10px;
+  width: 24px;
+  height: 21px;
+  line-height: 21px;
+}
+
+.links_container {
+  display: flex;
+  grid-gap: 53px;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  @media (max-width: 768px) {
+    grid-gap: 31px;
+  }
+}
+
+.worktime {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  color: #181818;
+  transform: translateY(3px);
+
+  a {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 33px;
+    color: #181818;
+    text-decoration: underline;
+  }
+}
+
+.worktime-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+

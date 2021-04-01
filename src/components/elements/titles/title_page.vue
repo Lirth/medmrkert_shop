@@ -1,5 +1,5 @@
 <template>
-    <div><h2 class="title_page"><slot></slot></h2></div>
+    <div class="title_page"><h2 class=""><slot></slot></h2></div>
 </template>
 
 <script>
@@ -10,14 +10,20 @@
 
 <style scoped lang="scss">
     .title_page {
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 38px;
-        line-height: 130%;
-        color: #000000;
+        margin-bottom: 40px;
+        h2 {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 130%;
+            color: #000000;
+        }
         @media (max-width: 768px) {
-            font-size: 21px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 26px;
+            }
         }
     }
 </style>
