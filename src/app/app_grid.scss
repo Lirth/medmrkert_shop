@@ -21,9 +21,29 @@ section, header, footer {
 
   }
   .container {
-    max-width: 1540px;
+    max-width: 1652px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
   }
+}
+
+section {
+  margin-bottom: 80px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.slider_wrapper {
+  @media (max-width: 768px) {
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.carousel_wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
 }

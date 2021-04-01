@@ -1,0 +1,217 @@
+.examples_slides_wrapper {
+  position: relative;
+}
+
+.carousel_container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 49px;
+  }
+
+
+  .carousel_wrapper {
+    transition: .2s;
+    display: flex;
+    min-width: 100%;
+    width: 100%;
+    grid-column-gap: 25px;
+    position: relative;
+
+    .carousel_item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      padding-top: 147px;
+      padding-bottom: 91px;
+      @media (max-width: 768px) {
+        justify-content: flex-end;
+        border-radius: 0;
+        padding-top: 74px;
+        padding-bottom: 46px;
+      }
+      @media (max-width: 576px) {
+
+      }
+
+      h1 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 94px;
+        line-height: 108px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #59BAB2;
+        margin-bottom: 8px;
+        z-index: 1;
+        @media (max-width: 768px) {
+          font-size: 44px;
+          line-height: 28px;
+        }
+        @media (max-width: 576px) {
+
+        }
+      }
+
+      h2 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #181818;
+        margin-bottom: 53px;
+        z-index: 1;
+        @media (max-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 576px) {
+
+        }
+      }
+
+      .bg_placeholder {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+        padding: 36px 44px;
+        z-index: 1;
+        margin-bottom: 71px;
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 576px) {
+
+        }
+      }
+
+      .btn_slideinfo {
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.nav_slider_button_group {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  align-items: center;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  @media (max-width: 768px) {
+    align-items: flex-end;
+    padding-bottom: 42px;
+  }
+
+  .btn_prev, .btn_next {
+    background: #42B1A8;
+    border-radius: 4px;
+    width: 52px;
+    height: 52px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn_prev {
+    transform: translateX(-110px);
+    @media (max-width: 1900px) {
+      transform: translateX(20px);
+    }
+    @media (max-width: 768px) {
+      transform: translateX(20px);
+    }
+
+    svg {
+      transform: translateX(-10%);
+      fill: #ffffff;
+    }
+  }
+
+  .btn_next {
+    transform: translateX(110px);
+    @media (max-width: 1900px) {
+      transform: translateX(-20px);
+    }
+    @media (max-width: 768px) {
+      transform: translateX(-20px);
+    }
+
+    svg {
+      transform: translateX(10%);
+      fill: #ffffff;
+    }
+  }
+}
+
+
+@keyframes next {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--element-width))
+  }
+}
+
+@keyframes prev {
+  from {
+    transform: translateX(var(--element-width));
+  }
+  to {
+    transform: translateX(0)
+  }
+}
+
+.next {
+  animation: .3s next forwards;
+}
+
+.prev {
+  animation: .3s prev forwards;
+}
+
+
+.bg_image_1 {
+  background: url("../../../../public/images/image.png");
+  background-repeat: no-repeat;
+  padding: 0 100px;
+  text-align: center;
+  background-size: cover;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  a {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #181818;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

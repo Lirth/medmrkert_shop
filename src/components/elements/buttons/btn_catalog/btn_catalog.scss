@@ -1,4 +1,6 @@
 .btn_catalog_wrapper {
+  display: flex;
+  width: 100%;
   .btn_catalog {
     display: flex;
     border: 0;
@@ -13,6 +15,10 @@
     padding: 19px 22px;
     color: #FFFFFF;
     height: 48px;
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
 
     .catalog_icon {
       display: flex;

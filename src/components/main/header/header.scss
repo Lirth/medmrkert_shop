@@ -7,16 +7,6 @@
   }
 }
 
-.header_nav_wrapper {
-  border: 1px solid #EDEDED;
-  border-left: 0;
-  border-right: 0;
-  height: 46px;
-  @media (max-width: 1240px) {
-    display: none;
-  }
-}
-
 .upper_link_wrapper {
   display: flex;
   grid-gap: 69px;
@@ -77,8 +67,19 @@
 .navbar_wrapper {
   display: flex;
   grid-gap: 50px;
+  height: 48px;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    grid-gap: 0;
+  }
+
   li {
     list-style: none;
+
     a {
       font-family: Ubuntu, sans-serif;
       font-style: normal;
@@ -91,8 +92,3 @@
   }
 }
 
-.search_row {
-  display: flex;
-  align-items: center;
-
-}

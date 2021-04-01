@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" style="margin-bottom: 30px; border-bottom: 1px solid #EDEDED;">
         <header class="header_link_wrapper">
             <div class="container">
                 <ul class="upper_link_wrapper">
@@ -9,23 +9,13 @@
                 </ul>
             </div>
         </header>
-        <header style="position: relative">
-            <div class="container" style="z-index: 2;">
-                <div class="search_row">
-                    <logo></logo>
-                    <btn_catalog>Каталог</btn_catalog>
-                </div>
-            </div>
-        </header>
-        <header class="header_nav_wrapper">
-            <div class="container">
-                <ul class="navbar_wrapper">
-                    <li v-for="(item, index) in navbar" :key="index">
-                        <router-link :to="item.href" :target="item.target">{{ item.text }}</router-link>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        <div class="container">
+            <ul class="navbar_wrapper">
+                <li v-for="(item, index) in navbar" :key="index">
+                    <router-link :to="item.href" :target="item.target">{{ item.text }}</router-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
