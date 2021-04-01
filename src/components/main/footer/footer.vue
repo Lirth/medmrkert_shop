@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" style="margin-bottom: 0;">
         <footer style="background: #FFFFFF; border-top: 1px solid #F6F6F6;">
             <div class="container">Подвал_1</div>
         </footer>

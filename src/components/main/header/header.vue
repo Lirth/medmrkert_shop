@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" style="margin-bottom: 30px; border-bottom: 1px solid #EDEDED;">
+    <div class="wrapper">
         <header class="header_link_wrapper">
             <div class="container">
                 <ul class="upper_link_wrapper">

@@ -33,4 +33,7 @@
         color: rgba(24, 24, 24, 0.55);
         cursor: auto;
     }
+    a:hover {
+        text-decoration: none !important;
+    }
 </style>

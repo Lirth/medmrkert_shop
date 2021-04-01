@@ -1,7 +1,7 @@
 <template>
     <div class="examples_slides_wrapper">
         <div class="carousel_container">
-            <div class="carousel_wrapper" ref="carousel" :key="current">
+            <div class="carousel_wrapper" style="padding: 0 !important;" ref="carousel" :key="current">
                 <div ref="carousel_item" class="carousel_item bg_image_1" v-for="(item, index) in array"
                      :key="item*1222+index*321">
                     <template v-if="item === 1">

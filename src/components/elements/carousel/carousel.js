@@ -1,12 +1,15 @@
 import title_section from "../titles/title_section.vue";
 import btn_small from "../buttons/btn_small/btn_small.vue";
 import btn_small_empty from "../buttons/btn_small_empty/btn_small_empty.vue";
+import product_item from "../product_item/product_item.vue";
+
 export default {
     name: 'carousel',
     components: {
         title_section,
         btn_small,
         btn_small_empty,
+        product_item,
     },
     data() {
         return {

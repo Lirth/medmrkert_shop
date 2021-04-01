@@ -13,21 +13,16 @@
   align-items: center;
   width: 100%;
   order: 0;
-  margin-top: 10px;
-  padding: 20px;
-
-  @media (max-width: 768px) {
-    margin-top: 12px;
-  }
-
 
   .carousel_wrapper {
     transition: .2s;
     display: flex;
     min-width: 100%;
     width: 100%;
-    grid-column-gap: 20px;
     position: relative;
+    grid-gap: 20px;
+    padding: 20px !important;
+    padding-top: 30px !important;
 
     .carousel_item {
       display: flex;
@@ -36,7 +31,11 @@
       justify-content: center;
       border-radius: 6px;
       padding: 15px;
+
       min-width: calc(100% / 6 - calc(20px * (6 - 1) / 6));
+      @media (max-width: 768px) {
+        box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.09);
+      }
 
       .prod-image-card {
         margin: 11px 0px 50px 0;
@@ -143,6 +142,7 @@
       box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.09);
     }
 
+
   }
 }
 
@@ -157,6 +157,7 @@
     order: 1;
     justify-content: space-between;
     margin-top: 12px;
+    display: none;
   }
   @media (max-width: 576px) {
     width: 100%;

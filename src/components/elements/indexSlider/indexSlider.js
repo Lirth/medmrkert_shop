@@ -1,8 +1,9 @@
 import btn_large from "../buttons/btn_large/btn_large.vue";
+
 export default {
     name: 'slider',
     components: {
-      btn_large,
+        btn_large,
     },
     data() {
         return {

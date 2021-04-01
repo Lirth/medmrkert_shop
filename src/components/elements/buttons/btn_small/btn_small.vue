@@ -32,4 +32,7 @@
         color: #FFFFFF;
         grid-gap: 8.43px;
     }
+    a:hover {
+        text-decoration: none !important;
+    }
 </style>
