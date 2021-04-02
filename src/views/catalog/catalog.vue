@@ -20,7 +20,7 @@
                             Очистить фильтр
                         </button>
                     </div>
-                    <div class="sidebar_item" v-for="item in 5" :class="{ 'active' : isActive }">
+                    <div class="sidebar_item" v-for="item in 1" :class="{ 'active' : isActive }">
                         <div class="sidebar_item_showsettings"  @click="showFilter">
                             <h6>Категория товара</h6>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
